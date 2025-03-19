@@ -1,0 +1,84 @@
+.thumbnail{
+  width:100%;
+  object-fit: contain;/*it will help to fit the image*/
+  object-position:right;
+
+}
+.channel-picture{
+  display:inline-block;
+  width:35px;
+  vertical-align: top;
+
+}
+.video-info-grid{
+  display:grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-picture{
+  width:36px;
+  border-radius:50px;
+}
+.video-title{
+  margin-top:0px;
+  font-size:14;
+  font-weight: 500;
+  line-height: 15px;
+  margin-bottom:12px;
+}
+.thumbnail-row{
+  margin-bottom:8px;
+  position: relative;
+}
+.video-aurthor,
+.video-stats{
+  font-size:12px;
+  color:rgb(96,96,96);
+  margin-bottom: 0px;
+
+}
+
+.video-aurthor{
+  margin-bottom:4px;
+}
+.video-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+/*resonsible for sizing and resizing the screen*/
+@media (max-width:750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+@media(max-width:751px) and (min-width:999)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width:1000px)
+  {
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*above block is resonsible for sizing and resizing the screen*/
+
+
+.video-time{
+  font-family: Roboto,Arial;
+  font-size:12px;
+  padding: 4px 4px 4px 4px;/*shortcut padding:top right bottom left if padding: 4px it applicabel for all 4 directions same for the margin*/
+  margin: 4px 4px 4px 4px;/*shortcut margin:top right bottom left*/
+  border-radius:2px;
+  background-color: black;
+  color: white;
+  position:absolute;
+  bottom:10px;
+  right:8px;
+}
